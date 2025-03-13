@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             menuStrip1 = new MenuStrip();
             mnsCadastrar = new ToolStripMenuItem();
             mnsSobre = new ToolStripMenuItem();
@@ -42,7 +43,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { mnsCadastrar, mnsSobre, mnsSair });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(420, 24);
+            menuStrip1.Size = new Size(389, 24);
             menuStrip1.TabIndex = 1;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -68,9 +69,11 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(0, 27);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(420, 294);
+            pictureBox1.Size = new Size(389, 294);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
             // 
@@ -78,7 +81,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(420, 321);
+            ClientSize = new Size(389, 321);
             Controls.Add(pictureBox1);
             Controls.Add(menuStrip1);
             Name = "FormMain";
