@@ -32,7 +32,9 @@
             mnsCadastrar = new ToolStripMenuItem();
             mnsSobre = new ToolStripMenuItem();
             mnsSair = new ToolStripMenuItem();
+            pictureBox1 = new PictureBox();
             menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // menuStrip1
@@ -40,7 +42,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { mnsCadastrar, mnsSobre, mnsSair });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 24);
+            menuStrip1.Size = new Size(420, 24);
             menuStrip1.TabIndex = 1;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -64,16 +66,26 @@
             mnsSair.Text = "Sair";
             mnsSair.Click += mnsSair_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Location = new Point(0, 27);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(420, 294);
+            pictureBox1.TabIndex = 2;
+            pictureBox1.TabStop = false;
+            // 
             // FormMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(420, 321);
+            Controls.Add(pictureBox1);
             Controls.Add(menuStrip1);
             Name = "FormMain";
             Text = "Form1";
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -84,5 +96,6 @@
         private ToolStripMenuItem mnsCadastrar;
         private ToolStripMenuItem mnsSobre;
         private ToolStripMenuItem mnsSair;
+        private PictureBox pictureBox1;
     }
 }
